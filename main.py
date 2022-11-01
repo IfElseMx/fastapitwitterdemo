@@ -83,7 +83,9 @@ class Tweet(BaseModel):
 def signup(user: UserRegister = Body(...)):
     """
     Signup
+
     This path operation register a user in the app
+
     Parameters: 
         - Request body parameter
             - user: UserRegister
@@ -130,8 +132,10 @@ def login():
 def show_all_users():
     """
     This path operation shows all users in the app
+
     Parameters: 
         -
+
     Returns a json list with all users in the app, with the following keys: 
         - user_id: UUID
         - email: Emailstr
@@ -209,7 +213,9 @@ def home():
 def post(tweet: Tweet = Body(...)):
     """
     Post a Tweet
+
     This path operation post a tweet in the app
+
     Parameters: 
         - Request body parameter
             - tweet: Tweet
