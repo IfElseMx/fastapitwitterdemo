@@ -2,7 +2,7 @@
 from uuid import UUID
 from datetime import date
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List
 
 # Pydantic
 from pydantic import BaseModel
